@@ -8,22 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		BEEE2CB621550E0600A298D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEE2CB521550E0600A298D0 /* AppDelegate.swift */; };
-		BEEE2CB821550E0600A298D0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEE2CB721550E0600A298D0 /* ViewController.swift */; };
-		BEEE2CBB21550E0600A298D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEEE2CB921550E0600A298D0 /* Main.storyboard */; };
 		BEEE2CBE21550E0600A298D0 /* BTC_Checker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BEEE2CBC21550E0600A298D0 /* BTC_Checker.xcdatamodeld */; };
 		BEEE2CC021550E0700A298D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEEE2CBF21550E0700A298D0 /* Assets.xcassets */; };
 		BEEE2CC321550E0700A298D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEEE2CC121550E0700A298D0 /* LaunchScreen.storyboard */; };
+		BEEE2CCC21550FE600A298D0 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEE2CCA21550FE600A298D0 /* InitialViewController.swift */; };
+		BEEE2CCD21550FE600A298D0 /* InitialViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BEEE2CCB21550FE600A298D0 /* InitialViewController.xib */; };
+		BEEE2CCF215512A600A298D0 /* RestMan.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEE2CCE215512A600A298D0 /* RestMan.swift */; };
+		BEEE2CD1215512E500A298D0 /* Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEE2CD0215512E500A298D0 /* Codable.swift */; };
+		BEEE2CD621551ABF00A298D0 /* CoinTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEE2CD421551ABF00A298D0 /* CoinTableViewCell.swift */; };
+		BEEE2CD721551ABF00A298D0 /* CoinTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BEEE2CD521551ABF00A298D0 /* CoinTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BEEE2CB221550E0600A298D0 /* BTC-Checker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BTC-Checker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEEE2CB521550E0600A298D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BEEE2CB721550E0600A298D0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		BEEE2CBA21550E0600A298D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BEEE2CBD21550E0600A298D0 /* BTC_Checker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BTC_Checker.xcdatamodel; sourceTree = "<group>"; };
 		BEEE2CBF21550E0700A298D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BEEE2CC221550E0700A298D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BEEE2CC421550E0700A298D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEEE2CCA21550FE600A298D0 /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
+		BEEE2CCB21550FE600A298D0 /* InitialViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InitialViewController.xib; sourceTree = "<group>"; };
+		BEEE2CCE215512A600A298D0 /* RestMan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestMan.swift; sourceTree = "<group>"; };
+		BEEE2CD0215512E500A298D0 /* Codable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Codable.swift; sourceTree = "<group>"; };
+		BEEE2CD421551ABF00A298D0 /* CoinTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinTableViewCell.swift; sourceTree = "<group>"; };
+		BEEE2CD521551ABF00A298D0 /* CoinTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoinTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +64,13 @@
 		BEEE2CB421550E0600A298D0 /* BTC-Checker */ = {
 			isa = PBXGroup;
 			children = (
+				BEEE2CD0215512E500A298D0 /* Codable.swift */,
+				BEEE2CCE215512A600A298D0 /* RestMan.swift */,
+				BEEE2CCA21550FE600A298D0 /* InitialViewController.swift */,
+				BEEE2CCB21550FE600A298D0 /* InitialViewController.xib */,
+				BEEE2CD421551ABF00A298D0 /* CoinTableViewCell.swift */,
+				BEEE2CD521551ABF00A298D0 /* CoinTableViewCell.xib */,
 				BEEE2CB521550E0600A298D0 /* AppDelegate.swift */,
-				BEEE2CB721550E0600A298D0 /* ViewController.swift */,
-				BEEE2CB921550E0600A298D0 /* Main.storyboard */,
 				BEEE2CBF21550E0700A298D0 /* Assets.xcassets */,
 				BEEE2CC121550E0700A298D0 /* LaunchScreen.storyboard */,
 				BEEE2CC421550E0700A298D0 /* Info.plist */,
@@ -127,7 +139,8 @@
 			files = (
 				BEEE2CC321550E0700A298D0 /* LaunchScreen.storyboard in Resources */,
 				BEEE2CC021550E0700A298D0 /* Assets.xcassets in Resources */,
-				BEEE2CBB21550E0600A298D0 /* Main.storyboard in Resources */,
+				BEEE2CD721551ABF00A298D0 /* CoinTableViewCell.xib in Resources */,
+				BEEE2CCD21550FE600A298D0 /* InitialViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,8 +151,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BEEE2CB821550E0600A298D0 /* ViewController.swift in Sources */,
+				BEEE2CD621551ABF00A298D0 /* CoinTableViewCell.swift in Sources */,
+				BEEE2CCC21550FE600A298D0 /* InitialViewController.swift in Sources */,
 				BEEE2CB621550E0600A298D0 /* AppDelegate.swift in Sources */,
+				BEEE2CCF215512A600A298D0 /* RestMan.swift in Sources */,
+				BEEE2CD1215512E500A298D0 /* Codable.swift in Sources */,
 				BEEE2CBE21550E0600A298D0 /* BTC_Checker.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,14 +163,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		BEEE2CB921550E0600A298D0 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BEEE2CBA21550E0600A298D0 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		BEEE2CC121550E0700A298D0 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
