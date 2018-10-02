@@ -12,11 +12,15 @@ class InitialViewController: UIViewController {
     
     var data: Dictionary<String,Coin>?
     var filteredData: Dictionary<String,Coin>?
+    var indicator = UIActivityIndicatorView()
     
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        activityIndicator()
+        indicator.startAnimating()
+        indicator.backgroundColor = UIColor.white
 
         navigationItem.title = "BTC Checker"
         tableView.delegate = self
@@ -27,6 +31,8 @@ class InitialViewController: UIViewController {
         RestMan.shared.get(url: "https://blockchain.info/ticker", type: Dictionary<String,Coin>.self) { (coin, error) in
             DispatchQueue.main.async {
                 self.data = coin!
+                self.indicator.stopAnimating()
+                self.indicator.hidesWhenStopped = true
                 self.tableView.reloadData()
             }
         }
@@ -55,4 +61,15 @@ extension InitialViewController: UITableViewDelegate, UITableViewDataSource {
         return cell
     }
     
+}
+
+// Creating an activity indicator and show he, when table load.
+
+extension InitialViewController {
+    func activityIndicator() {
+        indicator = UIActivityIndicatorView(frame: CGRect(x: 0, y: 0, width: 40, height: 40))
+        indicator.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.gray
+        indicator.center = self.view.center
+        self.view.addSubview(indicator)
+    }
 }
