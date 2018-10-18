@@ -1,0 +1,7 @@
+## general macOS files ##
+.DS_Store
+.AppleDouble
+.LSOverride
+
+## xcode user settings files ##
+xcuserdata/
