@@ -45,6 +45,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A4C8C0042178BCD700A91B02 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BEEE2CCA21550FE600A298D0 /* InitialViewController.swift */,
+				BEEE2CCB21550FE600A298D0 /* InitialViewController.xib */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		A4C8C0052178BCDA00A91B02 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BEEE2CCE215512A600A298D0 /* RestMan.swift */,
+				BEEE2CD0215512E500A298D0 /* Codable.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A4C8C0062178BD1400A91B02 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BEEE2CD421551ABF00A298D0 /* CoinTableViewCell.swift */,
+				BEEE2CD521551ABF00A298D0 /* CoinTableViewCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		BEEE2CA921550E0600A298D0 = {
 			isa = PBXGroup;
 			children = (
@@ -64,12 +91,9 @@
 		BEEE2CB421550E0600A298D0 /* BTC-Checker */ = {
 			isa = PBXGroup;
 			children = (
-				BEEE2CD0215512E500A298D0 /* Codable.swift */,
-				BEEE2CCE215512A600A298D0 /* RestMan.swift */,
-				BEEE2CCA21550FE600A298D0 /* InitialViewController.swift */,
-				BEEE2CCB21550FE600A298D0 /* InitialViewController.xib */,
-				BEEE2CD421551ABF00A298D0 /* CoinTableViewCell.swift */,
-				BEEE2CD521551ABF00A298D0 /* CoinTableViewCell.xib */,
+				A4C8C0062178BD1400A91B02 /* Views */,
+				A4C8C0052178BCDA00A91B02 /* Models */,
+				A4C8C0042178BCD700A91B02 /* Controllers */,
 				BEEE2CB521550E0600A298D0 /* AppDelegate.swift */,
 				BEEE2CBF21550E0700A298D0 /* Assets.xcassets */,
 				BEEE2CC121550E0700A298D0 /* LaunchScreen.storyboard */,
@@ -293,6 +317,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JP3JNAQ57T;
 				INFOPLIST_FILE = "BTC-Checker/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -310,6 +335,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JP3JNAQ57T;
 				INFOPLIST_FILE = "BTC-Checker/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
