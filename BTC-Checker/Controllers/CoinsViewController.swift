@@ -75,8 +75,7 @@ extension CoinsViewController: UITableViewDelegate, UITableViewDataSource {
             let array = Array(cellData.keys)
             if let actualCoin = cellData[array[indexPath.row]]{
                 cell.coinLabel.text = "\(array[indexPath.row]) : \(actualCoin.symbol)"
-                cell.buyLabel.text = "Buy Value: \(actualCoin.buy)"
-                cell.sellLabel.text = "Sell Value : \(actualCoin.sell)"
+                cell.valueLabel.text = "Value: \(actualCoin.sell)"
             }
         }
         return cell
