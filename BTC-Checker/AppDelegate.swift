@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         window = UIWindow.init(frame: UIScreen.main.bounds)
-        let navControl = UINavigationController.init(rootViewController: InitialViewController())
+        let navControl = UINavigationController.init(rootViewController: ConversionViewController())
         
         navControl.navigationBar.prefersLargeTitles = true
         
