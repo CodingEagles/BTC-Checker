@@ -1,5 +1,5 @@
 //
-//  InitialViewController.swift
+//  CoinsViewController.swift
 //  BTC-Checker
 //
 //  Created by Ada 2018 on 21/09/2018.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class InitialViewController: UIViewController {
+class CoinsViewController: UIViewController {
     
     var data: Dictionary<String,Coin>?
     var filteredData: Dictionary<String,Coin>?
@@ -23,7 +23,7 @@ class InitialViewController: UIViewController {
         
         activityIndicator()
 
-        navigationItem.title = "BTC Value Checker"
+        navigationItem.title = "Coins List"
         tableView.delegate = self
         tableView.dataSource = self
         
@@ -63,7 +63,7 @@ class InitialViewController: UIViewController {
 
 }
 
-extension InitialViewController: UITableViewDelegate, UITableViewDataSource {
+extension CoinsViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return filteredData?.count ?? 0
@@ -84,7 +84,7 @@ extension InitialViewController: UITableViewDelegate, UITableViewDataSource {
     
 }
 
-extension InitialViewController: UISearchResultsUpdating ,UISearchBarDelegate {
+extension CoinsViewController: UISearchResultsUpdating ,UISearchBarDelegate {
     
     func updateSearchResults(for searchController: UISearchController) {
         tableView.reloadData()
